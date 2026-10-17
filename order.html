@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodie Hub | Home</title>
+    <title>Foodie Hub | Order</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Foodie Hub</h1>
-        <p>Your favourite food, just a click away!</p>
-
+        <h1>Place Your Order</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
@@ -19,10 +17,40 @@
         </nav>
     </header>
 
-    <main class="hero">
-        <h2>Good Food, Great Mood!</h2>
-        <p>Discover delicious meals made for you.</p>
-        <a class="btn" href="menu.html">Explore Our Menu</a>
+    <main>
+        <h2>Order Your Favourite Food</h2>
+
+        <form class="order-form" action="#" method="get">
+            <label for="customer">Your Name</label>
+            <input id="customer" type="text"
+                   placeholder="Enter your name" required>
+
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="tel"
+                   placeholder="Enter your phone number" required>
+
+            <label for="food">Select Food</label>
+            <select id="food" name="food" required>
+                <option value="">Choose an item</option>
+                <option>Margherita Pizza</option>
+                <option>Classic Burger</option>
+                <option>White Sauce Pasta</option>
+                <option>Grilled Sandwich</option>
+            </select>
+
+            <label for="quantity">Quantity</label>
+            <input id="quantity" type="number"
+                   min="1" value="1" required>
+
+            <label for="address">Delivery Address</label>
+            <textarea id="address"
+                      placeholder="Enter your address"
+                      required></textarea>
+
+            <button class="btn" type="submit">Submit Order</button>
+        </form>
+
+        <p>This is a demo form; it does not send orders to a restaurant.</p>
     </main>
 
     <footer>

@@ -99,6 +99,38 @@ footer {
     font-size: 20px;
 }
 
+/* Order form styling */
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 420px;
+    margin: 25px auto;
+    text-align: left;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.order-form textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.order-form button {
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+/* Responsive styling */
 @media (max-width: 600px) {
     nav a {
         margin: 6px;
@@ -107,3 +139,8 @@ footer {
     .hero h2 {
         font-size: 28px;
     }
+
+    header h1 {
+        font-size: 30px;
+    }
+}
