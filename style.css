@@ -73,3 +73,37 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.food-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000012;
+}
+
+.food-icon {
+    font-size: 48px;
+}
+
+.price {
+    color: #e85d04;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        margin: 6px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
